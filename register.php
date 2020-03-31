@@ -29,6 +29,7 @@ if (isset($_POST['register'])) {
       //if not you can inset the data
       $stmt = $pdo->prepare('INSERT INTO users(name,email,password) VALUES(?,?,?)');
       $stmt->execute([$userName, $userEmail, $passwordHas]);
+      header('Location: http://localhost/loginRegister/index.php');
     }
     //echo $totalUsers . '<br>';
   }
