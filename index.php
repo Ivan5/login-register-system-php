@@ -1,20 +1,18 @@
 <?php
 require_once './config/db.php';
-
-
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php require('./inc/header.html'); ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+<div class="container">
+  <div class="card bg-light mb-3">
+    <div class="card-header">
+      <h5>Welcome Guest</h5>
+    </div>
+    <div class="card-body">
+      <h4>Please Login/Register to unlock all content</h4>
+    </div>
+  </div>
+</div>
 
-<body>
-
-</body>
-
-</html>
+<?php require('./inc/footer.html'); ?>
